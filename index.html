@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>James Bern</title>
+        <script type="text/javascript" src="d:/professional website/LaTeXMathML.js"></script>
+        <style>
+* {
+    box-sizing: border-box;
+}
+.content {
+    max-width: 780;
+    margin: auto;
+}
+a {color:#4fa7b8;}
+p {color:black;margin-top:.5em;margin-bottom:.5em;margin-left:0;margin-right:0;}
+body {margin:24;background-color:white;color:black;white-space:pre;font-family:sans-serif;white-space:normal;}
+img {
+    margin-left: auto;
+    margin-right: auto;
+   border: 1px solid black;
+    width: 49%;
+}
+.zoom {
+    <!-- padding: 0px; -->
+    <!-- transition: transform .2s; -->
+    <!-- transition-timing-function: linear; -->
+    <!-- margin: 0 auto; -->
+}
+.zoom:hover {
+    <!-- transform: scale(2.2); -->
+}
+
+.lightbox {
+    /* Default to hidden */
+    display: none;
+
+    /* Overlay entire screen */
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    /* A bit of padding around image */
+    padding: 1em;
+
+    /* Translucent background */
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Unhide the lightbox when it's the target */
+.lightbox:target {
+    display: block;
+}
+
+.lightbox span {
+    /* Full width and height */
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    /* Size and position background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+    </style>
+    </head>
+    <div class="content">
+        <body>
+            <div>
+            <p style="float:left;">
+            <img style="width:128px;margin:0 35 0 0;border:0px" alt="" src="headshot.jfif" alt="headshot" >
+            </p>
+            <p>
+            <br>
+            <b>James Bern</b>
+            <br>Postdoctoral Associate
+            <br>MIT CSAIL
+            <br>Distributed Robotics Lab
+            <br><a href='ma&#105;lt&#111;&#58;jame%73&#37;6Db&#101;r&#110;&#64;%67mail&#46;co&#109;'>j&#97;&#109;&#101;smbern&#64;gmail&#46;c&#111;m</a>
+            <br>he / him / his
+            </p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <b>Research:</b> Soft-Rigid Robot Design, Modeling, and Control
+            <p>I work at the intersection of computer graphics and soft robotics.
+            My research explores how simulation, optimization, and visualization methods popular in computer graphics can be applied to help design, model, and control the next generation of soft-rigid robots.</p>
+            <!-- <a href="#">youtube playlist</a> -->
+            <!-- how to simulate a soft robot -->
+            <!-- todo techniques from 3D printing, etc. -->
+            <!-- todo thesis -->
+            <br>
+            <iframe width="380" height="315" src="https://www.youtube.com/embed/tudxHzZ5_ls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="380" height="315" src="https://www.youtube.com/embed/T7cRbpIhgsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <br>
+            <a href="https://scholar.google.com/citations?user=RbpGItIAAAAJ&hl=en">google scholar</a>
+            <br>
+            <br>
+            <br>
+            <b>DRAW_(ROBOTS)</b> is a data-oriented intro to research at the intersection of computer graphics and robotics.
+            <p>This is a collection of slides, code, and assignments I have written to help undergraduate researchers pick up the practical skills required to do novel research in soft robot simulation and control.</p>
+            <!--<p>Update: I will teach this class as an IAP January 2022 :)</p>-->
+
+            <p style="text-align:center;">
+            <a href="#img1"><img src="course.PNG"></a><a href="#_" class="lightbox" id="img1"><span style="background-image: url('course.PNG')"></span></a>
+            <a href="#img2"><img src="course2.PNG"></a><a href="#_" class="lightbox" id="img2"><span style="background-image: url('course2.PNG')"></span></a>
+            <br>
+            <i>click to enlarge sample slides</i>
+            </p>
+            <a href="https://docs.google.com/presentation/d/1X6nZiLPong-wZe3S9W5aRLod5e5wQluGhd_EphY0ovo/edit?usp=sharing">google slides</a>
+            <!--<a href="#">github</a>-->
+            <!--<a href="#">youtube playlist</a>-->
+            <br>
+            <br>
+            <br>
+            <br>
+            <b>Optimization Cheat Sheet</b>
+            <p>
+            </p>
+            <p>Notation: <i>U_x = dU / dx</i>, <i>U_xx = d<sup>2</sup>U / dx<sup>2</sup></i>.
+            <p><i>Gradient descent:</i> The first order Taylor expansion of the energy <nobr><i>E(x + dx) &#8776; E(x) + E_x(x) dx</i></nobr> is minimized by search direction <nobr><i>dx &larr; -E_x</i></nobr>.
+            <p><i>Newton's method:</i> The first order Taylor expansion of the gradient <nobr><i>E_x(x + dx) &#8776; E_x(x) + E_xx(x) dx</i></nobr> is zero for search direction <nobr><i>dx &larr; -inv(E_xx) E_x</i></nobr>.
+            <p><i>Direct sensitivity analysis:</i> The total derivative of constraint <nobr><i>C(u, x(u)) = 0</i></nobr> is linear system <nobr><i>C_u + C_x x_u = 0</i></nobr>, which can be solved for sensitivity <nobr><i>x_u = -inv(C_x) C_u</i></nobr>.
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </body>
+    </div>
+</html>
+
