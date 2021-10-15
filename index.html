@@ -82,11 +82,7 @@ img {
             <b>Research:</b> Soft-Rigid Robot Design, Modeling, and Control
             <p>I work at the intersection of computer graphics and robotics.
             My research leverages differentiable simulation and numerical optimization to design, model, and control the next generation of soft-rigid robots.</p>
-            <!-- <a href="#">youtube playlist</a> -->
-            <!-- how to simulate a soft robot -->
-            <!-- todo techniques from 3D printing, etc. -->
-            <!-- todo thesis -->
-            <br>
+            <!--<p>Update: Hiring UROP's</p>-->
             <iframe width="380" height="315" src="https://www.youtube.com/embed/tudxHzZ5_ls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe width="380" height="315" src="https://www.youtube.com/embed/T7cRbpIhgsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <br>
@@ -96,9 +92,8 @@ img {
             <br>
             <br>
             <b>DRAW_(ROBOTS):</b> Data-Oriented Intro to Computer Graphics &times; Robotics
-            <p>This is a mini class (slides, code, and assignments) to help undergraduate researchers pick up the practical skills required to do novel research at the intersection of computer graphics and robotics.</p>
+            <p>This is a mini class (slides, code, and assignments) to help undergrad researchers pick up the practical skills needed to do novel research at the intersection of computer graphics and robotics.</p>
             <!--<p>Update: I will teach this class as an IAP January 2022 :)</p>-->
-
             <p style="text-align:center;">
             <a href="#img1"><img src="course.PNG"></a><a href="#_" class="lightbox" id="img1"><span style="background-image: url('course.PNG')"></span></a>
             <a href="#img2"><img src="course2.PNG"></a><a href="#_" class="lightbox" id="img2"><span style="background-image: url('course2.PNG')"></span></a>
@@ -118,6 +113,10 @@ img {
             <p>Notation: <i>U_x = dU / dx</i>, <i>U_xx = d<sup>2</sup>U / dx<sup>2</sup></i>.
             <p><i>Gradient descent:</i> The first order Taylor expansion of the energy <nobr><i>E(x + dx) &#8776; E(x) + E_x(x) dx</i></nobr> is minimized by search direction <nobr><i>dx &larr; -E_x</i></nobr>.
             <p><i>Newton's method:</i> The first order Taylor expansion of the gradient <nobr><i>E_x(x + dx) &#8776; E_x(x) + E_xx(x) dx</i></nobr> is zero for search direction <nobr><i>dx &larr; -inv(E_xx) E_x</i></nobr>.
+            <p><i>Basic backtracking line search:</i>
+            First check if <nobr><i>&alpha; = 1</i></nobr> decreases the objective.
+        If not then try <nobr><i>&alpha; = 1/2</i></nobr>, then <nobr><i>1/4</i></nobr>, and so on.
+        Give up after e.g. <nobr><i>15</i></nobr> attempts, either returning some nominal <nobr><i>&alpha;</i></nobr>, or terminating the optimization.</p>
             <p><i>Direct sensitivity analysis:</i> The total derivative of constraint <nobr><i>C(u, x(u)) = 0</i></nobr> is linear system <nobr><i>C_u + C_x x_u = 0</i></nobr>, which can be solved for sensitivity <nobr><i>x_u = -inv(C_x) C_u</i></nobr>.
             <br>
             <br>
