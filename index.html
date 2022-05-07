@@ -1,133 +1,58 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>James Bern</title>
-        <style>
-* {
-    box-sizing: border-box;
-}
-.content {
-    max-width: 780;
-    margin: auto;
-}
-a {color:#4fa7b8;}
+ <head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>James Bern</title>
+
+  <style>
+* { box-sizing: border-box; }
+.content { max-width:780; margin:auto; }
+.content_no_max_width { max-width:1000000000; margin:auto; }
+a {color:#999999;}
 p {color:black;margin-top:.5em;margin-bottom:.5em;margin-left:0;margin-right:0;}
-body {margin:24;background-color:white;color:black;white-space:pre;font-family:sans-serif;white-space:normal;}
-img {
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid black;
-    width: 49%;
-}
+.comment { background-color:black;color:white; }
+body {font-family:monospace;font-size:1em;margin:24;background-color:white;color:black;white-space:pre;white-space:pre-wrap;}
+  </style>
 
-.lightbox {
-    /* Default to hidden */
-    display: none;
+ </head>
+ <body>
+  <div class="content">
+   <div> <p style="float:right;">
+    <b>James Bern</b>
+    Assistant Professor
+    <a href="http://www.cs.williams.edu/">Department of Computer Science</a>
+    <a href="http://www.williams.edu/">Williams College</a>
+    <a href='&#109;ail&#116;o&#58;&#106;%&#54;Db%&#51;15&#64;wi&#108;&#108;%&#54;9ams&#46;&#101;du'>j&#109;b15&#64;williams&#46;edu</a>
+    </p>
+   </div>
 
-    /* Overlay entire screen */
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
 
-    /* A bit of padding around image */
-    padding: 1em;
+   <h3>Teaching</h3>
+   <a href="#">CSCI 371: Computer Graphics</a> <span class="comment">// will prep you to dive into games, animation, and robotics</span>
+                               <span class="comment">// no prior exposure to linear algebra is expected</span>
 
-    /* Translucent background */
-    background: rgba(0, 0, 0, 0.8);
-}
+   <h3>Research</h3>
+   I lead the <a href="craft.html">CRAFT Lab</a>. We work on "Creating Robotic Art and the Future of Toys." </div>
+  <div class="content"> <h3>Coding Resources</h3>
+   These videos and articles helped me become a better programmer.
 
-/* Unhide the lightbox when it's the target */
-.lightbox:target {
-    display: block;
-}
+   <a href="https://www.youtube.com/watch?v=F3ntGDm6hOs">(YouTube) Casey Muratori  Intro to C on Windows - Day 1</a> <span class="comment">// great intro to C/C++</span>
+   <a href="https://www.youtube.com/watch?v=Ee3EtYb8d1o">(YouTube) Casey Muratori  Handmade Hero Day 001</a> <span class="comment">// coding along to episodes 1-30 blew my mind</span>
+   <a href="https://www.youtube.com/watch?v=fQeqsn7JJWA">(YouTube) Casey Muratori  Reinventing the wheel</a>
+   <a href="https://www.youtube.com/watch?v=_xLgr6Ng4qQ">(YouTube) Casey Muratori  Private Data & Getters / Setters</a>
+   <a href="https://www.youtube.com/watch?v=zjkuXtiG1og">(YouTube) Casey Muratori  new vs delete & struct vs class</a>
+   <a href="https://www.youtube.com/watch?v=ZM1ZDaaEyMY">(YouTube) Casey Muratori  The Holy OOP Grail</a>
+   <a href="https://www.youtube.com/watch?v=eAhWIO1Ra6M">(YouTube) Sean Barrett    Advice for Writing Small Programs in C</a>
+   <a href="https://www.youtube.com/watch?v=pW-SOdj4Kkk">(YouTube) Jonathan Blow   Preventing the Collapse of Civilization</a>
+   <a href="https://www.youtube.com/watch?v=oJ4GcZs7y6g">(YouTube) Jonathan Blow   Software Quality</a>
+   <a href="https://www.youtube.com/watch?v=vCzrKjbXZQY">(YouTube) Jonathan Blow   Art of getting stuff going</a>
+   <a href="https://www.youtube.com/watch?v=rX0ItVEVjHc">(YouTube) Mike Acton      Data-Oriented Design and C++</a>
 
-.lightbox span {
-    /* Full width and height */
-    display: block;
-    width: 100%;
-    height: 100%;
-
-    /* Size and position background image */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-        </style>
-    </head>
-    <div class="content">
-        <body>
-            <div>
-                <p style="float:left;">
-                <a href="index.html"><img style="width:128px;margin:0 35 0 0;border:0px" alt="" src="headshot.jfif" alt="headshot" ></a>
-                </p>
-                <p>
-                <br>
-                <b>James Bern</b>
-                <br>Postdoctoral Associate
-                <br>MIT CSAIL
-                <br>Distributed Robotics Lab
-                <br>
-                <a href='&#109;&#97;il&#116;o&#58;&#106;ber&#37;6E&#64;%&#54;Di&#116;&#46;e%64u'>jbern&#64;m&#105;t&#46;edu</a>
-                <br>he / him / his
-                </p>
-            </div>
-            <br>
-            <br>
-            <br>
-            <b>Research:</b> Soft-Rigid Robot Design, Modeling, and Control
-            <!-- undergrad_research.html -->
-            <p><a href="undergrad_research.html">> Undergraduate Research Opportunities</a></p>
-            <p><a href="https://scholar.google.com/citations?user=RbpGItIAAAAJ&hl=en">> Google Scholar</a></p>
-            <br>
-            <iframe width="360" height="275" src="https://www.youtube.com/embed/tudxHzZ5_ls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="360" height="275" src="https://www.youtube.com/embed/T7cRbpIhgsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="360" height="275" src="https://www.youtube.com/embed/SolAm7d74nQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="360" height="275" src="https://www.youtube.com/embed/4A07P-OVT3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <br>
-            <br>
-            <br>
-            <!--
-            <b>Draw Robots:</b> Data-Oriented Introduction to Graphics &times; Robotics
-            <br>
-            <p>This is a short course to help undergraduate and early graduate researchers pick up the practical skills needed to do novel research at the intersection of computer graphics and robotics.</p>
-            <p style="text-align:center;">
-            <a href="#img1"><img src="course.PNG"></a><a href="#_" class="lightbox" id="img1"><span style="background-image: url('course.PNG')"></span></a>
-            <a href="#img2"><img src="course2.PNG"></a><a href="#_" class="lightbox" id="img2"><span style="background-image: url('course2.PNG')"></span></a>
-            <br>
-            <i>click to enlarge sample slides</i>
-            </p>
-            <br>
-            <br>
-            -->
-            
-            <b>Optimization Glossary</b>
-            <p>
-            </p>
-            <p>Notation: <i>E_x = dE / dx</i>, <i>E_xx = d<sup>2</sup>E / dx<sup>2</sup></i>.
-            <p><i>Gradient descent:</i> The first order Taylor expansion of the energy <nobr><i>E(x + dx) &#8776; E(x) + E_x(x) dx</i></nobr> is minimized by search direction aligned with <nobr><i>dx &larr; -E_x</i></nobr>.
-            <p><i>Newton's method:</i> The first order Taylor expansion of the gradient <nobr><i>E_x(x + dx) &#8776; E_x(x) + E_xx(x) dx</i></nobr> is zero for search direction <nobr><i>dx &larr; -inv(E_xx) E_x</i></nobr>.
-            <p><i>Basic backtracking line search:</i>
-            Given current best guess <i>x</i> and search direction <nobr><i>dx</i></nobr>, our goal is to find <nobr>stepsize <i>&alpha;</i></nobr>
-            such that 
-            <nobr><i>E(x + &alpha;dx) < E(x)</i></nobr>.
-            First check if <nobr><i>&alpha; = 1</i></nobr> decreases the objective.
-            If not then try <nobr><i>&alpha; = 1/2</i></nobr>, then <nobr><i>1/4</i></nobr>, and so on.
-            Give up after e.g. <nobr><i>15</i></nobr> attempts, either returning some nominal <nobr><i>&alpha;</i></nobr> or terminating the optimization.</p>
-            <p><i>Direct sensitivity analysis:</i> Given control <i>u</i>, the resulting state <nobr><i>x(u)</i></nobr> solves the physical constraint <nobr><i>C(u, x) = 0</i></nobr>. Taking the total derivative of <nobr><i>C(u, x(u)) = 0</i></nobr> yields the linear system <nobr><i>C_u + C_x x_u = 0</i></nobr>, which can be solved for the <nobr>sensitivity <i>x_u = -inv(C_x) C_u</i></nobr>.
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-        </body>
-    </div>
+   <a href="https://caseymuratori.com/blog_0015"        >(article) Casey Muratori  Semantic Compression</a>
+   <a href="https://nothings.org/computer/edgeenum.html">(article) Sean Barrett    Enumeration of Polygon Edges from Vertex Windings</a> <span class="comment">// quick read</span>
+  </div>
+ </body>
 </html>
 
